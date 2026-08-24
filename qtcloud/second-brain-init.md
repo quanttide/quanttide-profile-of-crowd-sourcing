@@ -20,6 +20,10 @@
 - 原始对话导出文件（报名后提供）
 - 格式章程说明
 
+## 参考链接
+
+- 原始数据：[quanttide-asset（quanttide-profile-of-agent-engineering）](https://github.com/quanttide/quanttide-profile-of-agent-engineering/tree/main/quanttide-asset)
+
 ## 交付物
 
 - 资产云插件 / 可运行配置
@@ -28,7 +32,7 @@
 
 ## 报酬
 
-- 1000 元代金券（可兑换 CEO@张果 2 小时课程）
+- 1000 元代金券（可兑换 CEO 2 小时课程）
 - 也可自报价，最终协商
 
 ## 其他
