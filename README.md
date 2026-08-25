@@ -1,5 +1,4 @@
-# quanttide-profile-of-crowd-sourcing
-量潮众包管理画像
+# 量潮众包管理档案
 
 ## 目录约定
 
@@ -11,8 +10,3 @@ data/profile/
 └── <业务>/
     └── ...
 ```
-
-当前业务目录：
-
-- `qtcloud/` — 资产云相关业务
-  - `qtcloud/second-brain-init.md` — 众包任务档案（「第二大脑上下文创建对话」资产云插件任务）
