@@ -12,18 +12,18 @@
 
 迁移到自建平台上面，最大程度地减少邮箱的流程不确定带来的问题。
 
-## 任务输入
-
-## 参考链接
+当前流程：https://github.com/quanttide/qtrecurit/tree/main/docs/user-guide
 
 ## 交付物
 
 产品档案更新 qtrecuirt 的 execution.md，更新一份可行的迭代方案。
 
+交付地址：https://github.com/quanttide/quanttide-profile-of-product-development/blob/main/qtrecurit/implementation.md
+
 ## 报酬
 
-1000 元代金券或 100 元现金（二选一），也可自报价，最终协商
+1000 元代金券或 100 元现金（二选一）；也可自报价，最终协商
 
-## 其他
+## 截止日期
 
-截止日期：9月25日前有效，或者根据网站最新公告。
+9月25日前有效，或者根据网站最新公告。
