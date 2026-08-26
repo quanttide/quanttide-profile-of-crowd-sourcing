@@ -6,7 +6,10 @@
 
 ```
 data/profile/
-├── README.md              # 仓库说明（含一级文件夹约定）
+├── README.md              # 仓库说明
+├── AGENTS.md              # AI 维护规则
+├── qtcloud/               # 量潮云相关任务
+├── qtclass/               # 量潮课堂相关任务
 └── <业务>/
     └── ...
 ```
