@@ -9,7 +9,7 @@ data/profile/
 ├── README.md              # 仓库说明
 ├── AGENTS.md              # AI 维护规则
 ├── qtcloud/               # 量潮云相关任务
-├── qtclass/               # 量潮课堂相关任务
+├── qtrecurit/             # 量潮招聘相关任务
 └── <业务>/
     └── ...
 ```
