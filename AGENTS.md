@@ -2,9 +2,9 @@
 
 ## 目录组织
 
-- 一级目录按业务线命名（如 `quanttide-strategy/`、`quanttide-relation/`、`quanttide-legal/`、`quanttide-org/`、`quanttide-project/`、`quanttide-github/`），各业务内容独立维护，互不混淆
+- 一级目录按业务线命名（如 `quanttide-strategy/`、`quanttide-relation/`、`quanttide-legal/`、`quanttide-org/`、`quanttide-project/`、`quanttide-github/`），每个业务线目录是上级根仓库文件夹下属的子模块，各业务内容独立维护，互不混淆
 - 业务显示名以档案元数据「业务」为准，目录只承担文件组织职责
-- 新增业务时直接创建子目录，无需额外审批
+- 新增业务线时新建对应子模块仓库并挂到本仓库根目录下，无需额外审批
 
 ## 任务档案格式
 
