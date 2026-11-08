@@ -2,14 +2,14 @@
 
 ## 目录组织
 
-- 众包管理的是从各第二大脑分解出来的实践课任务书级别的需求，一级目录按来源第二大脑命名（如 `quanttide-strategy/`、`quanttide-relation/`、`quanttide-legal/`、`quanttide-org/`、`quanttide-project/`、`quanttide-github/`）
+- 众包管理的是从各第二大脑分解出来的实践课任务书级别的需求，一级目录按来源命名（如 `quanttide-strategy/`、`quanttide-relation/`、`quanttide-legal/`、`quanttide-org/`、`quanttide-project/`、`quanttide-github/`；学习任务书入 `quanttide-learn/`，实训任务书入 `quanttide-academy/`）
 - 分类文件夹对应需求来源，方便成果按来源提交与验收；各目录内容独立维护，互不混淆
 - 业务显示名以档案元数据「业务」为准，目录只承担来源归类职责
-- 新增来源第二大脑时直接创建子目录，无需额外审批
+- 新增来源时直接创建子目录，无需额外审批
 
 ## 任务档案格式
 
-每个任务档案是一个 Markdown 文件，任务名取文件名去 `.md`，与站点 `tasks.json` 的任务一一对应。标准结构如下（站点解析依赖该格式，元数据缺失或小节标题不符将无法同步）：
+每个任务档案是一个 Markdown 文件。业务线任务书按以下标准结构（字段与 qtcrowd 站点数据契约一致）；集中收录的其他来源任务书（`quanttide-learn/`、`quanttide-academy/`）保留来源格式。标准结构如下：
 
 ```md
 # 任务名
@@ -47,23 +47,22 @@
 | 其他 | 否 | 红线、评价标准等补充说明 |
 | 截止日期 | 否 | 任务有效期；站点侧字段，不随档案自动同步 |
 
-未列入上表的小节（如「评价标准」「如何报名」）允许存在，仅保留在档案中，站点不解析。
+未列入上表的小节（如「评价标准」「如何报名」）允许存在，仅保留在档案中。
 
 ## 交付物规则
 
 - 档案只记录需求，交付物链接指向实际产出仓库（如 `quanttide-profile-of-product-development`）
 - 不在本仓库存放交付结果
 
-## 与站点数据管道的关系
+## 事实源与上线
 
-- 众包站点（apps/qtcrowd site）的 `tasks.json` 由 `scripts/sync-tasks.mjs` 从本仓库生成：档案字段以本仓库为准，站点侧字段（description、applyGuide）由站点维护
-- 同步与校验脚本扫描本仓库全部业务子目录，tasks.json 与档案必须一一对应
-- 档案变更后需运行站点侧 `npm run data:sync` 与 `npm run data:validate` 保持一致
+- 档案是任务书的事实源：任务书统一上线 qtclass lite（`src/lite/data/tasks`），lite 侧 frontmatter 补 title / description / 两把尺 tags，正文与档案字节一致
+- qtcrowd 是网站仓库，与档案解耦：站点下线任务书后 `tasks.json` 为空，不再从本仓库同步；站点侧 `data:validate` 只校验其自身数据契约
 
 ## 状态追踪
 
 - 每个任务必须标注状态
-- 认领后应更新状态字段，并同步站点数据
+- 认领后应更新状态字段
 
 ## 提交信息格式
 
